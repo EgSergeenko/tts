@@ -13,6 +13,8 @@ body {
     line-height: normal;
     margin: 0%;
     aspect-ratio: 1920 / 960;
+    position: fixed;
+    display: block;
 }
 
 #howTitle {
@@ -23,29 +25,36 @@ body {
 }
 
 #how {
-    display: block;
     width: 100%;
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    aspect-ratio: 10 / 1;
+}
+
+#how1, #how2 {
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#how2 {
+    z-index: 10;
 }
 
 #img1 {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: min-content;
 }
 
 #img2 {
     width: 100%;
-    display: block;
-    position: absolute;
-    top: 60px;
+    height: min-content;
     visibility: hidden;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    
 }
 
 
@@ -57,8 +66,6 @@ body {
     margin-right: auto;
     text-align: center;
     margin-top: 15px;
-    -moz-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
 }
 
 #voices, #sounds, #input {
@@ -68,8 +75,6 @@ body {
     width: 32%;
     height: 600px;
     vertical-align: middle;
-    -moz-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
 }
 
 #sounds {
@@ -119,6 +124,7 @@ body {
     text-align: center;
     margin-top: 10px;
     font-weight: 300;
+    white-space: nowrap;
 }
 
 #show {
@@ -141,18 +147,19 @@ body {
     min-height: 50px;
     position: relative;
     border-left: 5px solid #D36DA9;
+    margin-left: auto; 
+    margin-right: 0;
 }
 
 .voiceName {
     display: inline-block;
     /* color: #D36DA9; */
+    /* background-color: red; */
     text-align: left;
     font-size: 28pt;
     font-weight: 200;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%,-50%);
+    margin-left: 20px;
+    float: left;
     transition: font-size 0.3s ease-in-out;
 }
 
