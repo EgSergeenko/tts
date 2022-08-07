@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap');
+
+
+
+body {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(#161616, #232323) fixed;
+    color: #EDEDED;
+    font-family: 'Roboto', sans-serif;
+    line-height: normal;
+    margin: 0%;
+}
+
+#howTitle {
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 900;
+    color: #d5d5d6;
+}
+
+#how {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#img2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 60px;
+    visibility: hidden;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+#containers {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#voices, #sounds, #input {
+    display: inline-block;
+    /* background-color: #35353570; */
+    border-radius: 10px;
+    width: 32%;
+    height: 600px;
+    vertical-align: middle;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#sounds {
+    overflow: auto;
+    scrollbar-color: #262626;
+    scrollbar-width: thin;
+}
+
+
+
+
+#sounds::-webkit-scrollbar {
+    width: 10px;
+  }
+
+#sounds::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, #8E73DC 0%, #a289ee 99%);;
+    border-radius: 25px;
+}
+
+#sounds::-webkit-scrollbar-thumb {
+    background-color: #5f4d94;
+    border-radius: 25px;
+}
+
+
+#input2 {
+    background-color: #262626;
+    width: 95%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 20pt;
+    line-height: 24pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#mini, #show, #count, .alternatives, #copy {
+    background-color: none;
+    border: none;
+    color: #edededd0;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#show {
+    margin-top: 30px;
+}
+
+.alternatives {
+    text-align: left;
+    max-height: 0;
+    /* transform: translate(-50%,-50%); */
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+}
+
+
+.voiceRow {
+    vertical-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    min-height: 50px;
+    position: relative;
+    border-left: 5px solid #D36DA9;
+}
+
+.voiceName {
+    display: inline-block;
+    /* color: #D36DA9; */
+    text-align: left;
+    font-size: 28pt;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    transition: font-size 0.3s ease-in-out;
+}
+
+.voiceName:hover {
+    color: #D36DA9;
+    font-size: 32pt;
+}
+
+
+.soundRow {
+    margin: 3px;
+    min-height: 30px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.soundName {
+    font-weight: 200;
+    font-size: 19pt;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.soundName:hover {
+    color: #8E73DC;
+    font-size: 24pt;
+}
+
+
+
+audio {
+    display: none;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+span[contentEditable="true"] {
+    outline: none;
+}
+
+
+
