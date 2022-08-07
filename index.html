@@ -7,8 +7,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Инструкция TTS</title>
+    <title>Звуки TTS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
   </head>
 
   <body>
@@ -20,8 +22,13 @@
     </div>
 
     <div id="how"  onmouseover="showTips()" onmouseout="hideTips()">
-      <img id="img1" src="res/text.png"/>
-      <img id="img2" src="res/tips.png"/>
+      <div id="how1">
+        <img id="img1" src="res/text.png"/>
+      </div>
+      <div id="how2">
+        <img id="img2" src="res/tips.png"/>
+      </div>
+  
     </div>
 
 
@@ -32,6 +39,9 @@
         <p contenteditable="true" id="input2"></p>
         <div id="count">
         </div>
+        <!-- <div id="copy">
+          Скопировать
+        </div> -->
       </div>
     </div>
 
@@ -261,6 +271,8 @@
         }
 
         load_sounds()
+
+        document.getElementById("sounds").scrollTo({top: 700, behavior: 'smooth'})
 
       }
 
