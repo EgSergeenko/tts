@@ -34,7 +34,6 @@ body {
 
 #how1, #how2 {
     width: 100%;
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -120,7 +119,7 @@ body {
     background-color: none;
     border: none;
     color: #edededd0;
-    font-size: 12pt;
+    font-size: 14pt;
     text-align: center;
     margin-top: 10px;
     font-weight: 300;
