@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: normal;
     margin: 0%;
+    aspect-ratio: 1920 / 960;
 }
 
 #howTitle {
