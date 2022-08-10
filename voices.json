@@ -1,6 +1,4 @@
 {
-"segall":
-  "aliases": [
-    "сегалл", "сегал"
-    ]
+"segall": ["segall", "сегалл", "сегал"],
+"uselessmouth": ["uselessmouth","юзя", "uzy", "uzya"]
 }
