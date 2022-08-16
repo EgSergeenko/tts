@@ -1,5 +1,6 @@
 {
-"segall": ["сегалл", "сегал"],
-"uselessmouth": ["юзя", "uzy", "uzya"],
-"monster": ["монстер","монстр"]
+  "segall": ["сегалл", "сегал"],
+  "uselessmouth": ["юзя", "uzy", "uzya"],
+  "monster": ["монстер","монстр"],
+  "zoomer": ["зумер"]
 }
