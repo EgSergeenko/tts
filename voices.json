@@ -1,6 +1,19 @@
 {
-  "segall": ["сегалл", "сегал"],
-  "uselessmouth": ["юзя", "uzy", "uzya"],
-  "monster": ["монстер", "монстр"],
-  "zoomer": ["зумер"]
+  "segall": {
+    "aliases":["сегалл", "сегал"],
+    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
+  },
+    
+  "uselessmouth":  {
+    "aliases":["юзя", "uzy", "uzya"],
+    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
+  },
+  "monster":  {
+    "aliases":["монстер", "монстр"],
+    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
+  },
+  "zoomer":  {
+    "aliases":["зумер"],
+    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
+  }
 }
