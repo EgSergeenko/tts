@@ -4,8 +4,6 @@
   Тут всё плохо, как и в CSS файле, я знаю. Не моё это. Работает и ладно.
  -->
 
-<!-- 22:42 -->
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -44,9 +42,6 @@
         <p contenteditable="true" id="input2"></p>
         <div id="count">
         </div>
-        <!-- <div id="copy">
-          Скопировать
-        </div> -->
       </div>
     </div>
 
@@ -55,36 +50,6 @@
     </div>
 
     <script>
-
-      let voices = {
-        "segall": {
-          "aliases": [
-            "сегалл", "сегал"
-          ],
-          "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
-        },
-
-        "UselessMouth": {
-          "aliases": [
-            "юзя"
-          ],
-          "example":"https://audio.jukehost.co.uk/JQjfw51I8MPyCiK4M9jlm9nkHJ8abe0O"
-        },
-
-        "monster": {
-          "aliases": [
-            "монстр", "монстер"
-          ],
-          "example":"https://audio.jukehost.co.uk/bwc1656s9ss5zrnVEezrmXaVHzd3qDdz"
-        },
-
-        "zoomer": {
-          "aliases": [
-            "зумер"
-          ],
-          "example":"https://audio.jukehost.co.uk/smZ2FiGYYe2pNf7bTPSvxu43kyZVh8P3"
-        },
-      }
 
       function show_everything() {
         let button = document.getElementById("show")
@@ -140,8 +105,6 @@
           } else {
             alternatives.innerText = "Альтернативы: "+element
           }
-          
-            
         })
 
 
@@ -160,7 +123,8 @@
 
           if(name=="UselessMouth") {
             name = "Юзя"
-          }
+          } // Сделать выбор кратчайшей альтернативы
+          
 
           input.innerText = text+" "+name+":"
           change_count()
@@ -266,18 +230,33 @@
       }
 
 
+      function load_voices() {
+        let url = "https://raw.githubusercontent.com/declider/tts/main/voices.json"
+        let name, link;
+        
+        fetch(url)
+          .then(function(response) {
+            response.json().then(function(data) {
+              for (let [key, value] of Object.entries(data)) {
+                name = key
+                dicto = value
+                console.log('Жопа')
+                createVoice(name, dicto)
+              }
+            })
+          })
+      }
+
+
       function load() {
 
         document.body.addEventListener('click', show_everything)
         document.getElementById("input2").addEventListener("DOMCharacterDataModified", change_count)
 
-        for (let [key, value] of Object.entries(voices)) {
-          createVoice(key, value);
-        }
+
+        load_voices()
 
         load_sounds()
-
-        document.getElementById("sounds").scrollTo({top: 700, behavior: 'smooth'})
 
       }
 
