@@ -22,6 +22,7 @@ crowdLaugh2|https://audio.jukehost.co.uk/zL5J6lZ4RbxC40c9ErFwMhX1TFDTs3TV
 crowdLaugh3|https://audio.jukehost.co.uk/l54aWgcGHXJT5cWH8eYncT3D4yJXsJxF
 crowdLaughClap|https://audio.jukehost.co.uk/fFDxQRAQ0ouITIngiCtDPTmXRC7bcnKe
 desk|https://audio.jukehost.co.uk/FBfjus86DIh2Pte7l82sSDYJ8QG2ToPv
+dialing|https://audio.jukehost.co.uk/1XY2BNS1PYkKWOllrSpuEYlMwj1QdqP8
 doorBell|https://audio.jukehost.co.uk/C9KHN2HfRG8Ml2Jq7ea04HLW8BFLmmev
 doorKnock|https://audio.jukehost.co.uk/9YJtxj1VnH2N7Y3YXUbB2r85qFgUXSeN
 drill|https://audio.jukehost.co.uk/lQpLjOfihiSopSDzqv93jb3gyivn5Z9U
@@ -49,6 +50,7 @@ gunshots|https://audio.jukehost.co.uk/JSAVxkAfmEusVvLbFSR38wE1huKmOo7q
 gunTrigger|https://audio.jukehost.co.uk/SeJYxZTXHYW2iQ1yV5cB6ePHRTWrL6O2
 heartbeat|https://audio.jukehost.co.uk/t2WhohX0F5vzeU2KwljXrQx4HHjo0FO7
 hen|https://audio.jukehost.co.uk/hpjhJOZrvMiCoqrDh4L5LsaUQdR5kqES
+hitch|https://audio.jukehost.co.uk/XtfFNQuiKRjYM4iYyCkGFy85YQ4JPuRI
 honk|https://audio.jukehost.co.uk/T1KpaoBXffEWfq7rlYwg0QKPuLmdnZ9N
 horse|https://audio.jukehost.co.uk/Va0EFEQQe67BmTpqw0ZvaVsekIbhHSD1
 howl|https://audio.jukehost.co.uk/YPSVJ6sUU9YwGAZ01mtCFx1jvcWm4xsv
