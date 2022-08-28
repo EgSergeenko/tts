@@ -22,6 +22,17 @@
         <span>Для воспроизведения звука нужно указать нужный звук в фигурных скобках - </span>
         <span style="color: #8E73DC">{Звук}</span>
       </div>
+      <div style="white-space: nowrap;">
+        <span><br>Например: </span>
+        <span style="color: #D36DA9">[Anna]</span>
+        <span>Эта фраза будет произнесена голосом Анны.</span>
+        <span style="color: #D36DA9">[Irina] А эта – голосом Ирины. Сейчас включу звонок телефона</span>
+        <span style="color: #8E73DC">{phone}</span>
+        <span>и продолжу говорить голосом Ирины.</span>
+        <span>Это так просто, не правда ли, Анна?</span>
+        <span style="color: #D36DA9">[Anna]</span>
+        <span>Да, это очень просто.</span>
+      </div>
     </div>
 
     <div id="containers">
@@ -155,7 +166,7 @@
         let voices = ["Aleksandr","Anna","Arina","Artemiy","Elena","Irina","Mikhail","Pavel","Tatiana","Victoria","Vitaliy"]
         
         voices.forEach(element =>
-          create_voice(element)
+          createVoice(element)
           )
       }
 
