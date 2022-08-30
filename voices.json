@@ -1,18 +1,10 @@
 {
-  "segall": {
-    "aliases":["сегалл"],
-    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
-  },  
-  "uselessmouth":  {
-    "aliases":["юзя"],
-    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
-  },
+  "robot":  {
+    "aliases":["робот", "андроид", "киборг"],
+    "example":"https://audio.jukehost.co.uk/XtfFNQuiKRjYM4iYyCkGFy85YQ4JPuRI"
+  }, 
   "monster":  {
     "aliases":["монстер", "монстр"],
     "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
-  },
-  "zoomer":  {
-    "aliases":["зумер"],
-    "example":"https://audio.jukehost.co.uk/uqvDyRVFSsl1MDPi34s41SsisEhceOVJ"
   }
 }
