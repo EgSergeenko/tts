@@ -7,16 +7,8 @@
     "aliases":["монстер", "монстр"],
     "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
   },
-  "baby":  {
-    "aliases":["бэйби", "бэби", "боец"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
-  },
   "arrowwoods":  {
     "aliases":["ара", "аравудус"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
-  },
-  "test":  {
-    "aliases":["тест"],
     "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
   }
 }
