@@ -2,17 +2,17 @@
   "robot":  {
     "aliases":["робот", "андроид", "киборг"],
     "example":"https://audio.jukehost.co.uk/OfAhy5fRjmWvNcrDr7iTBb88nVyzRzr5",
-    "private": False
+    "private": false
   }, 
   "monster":  {
     "aliases":["монстер", "монстр"],
     "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
-    "private": False
+    "private": false
   },
   "arrowwoods":  {
     "aliases":["ара", "аравудус"],
     "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
-    "private": True,
+    "private": true,
     "channels": ["arrowwoods","declider","vanilnyj_pekan"]
   }
 }
