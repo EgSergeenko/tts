@@ -1,14 +1,18 @@
 {
   "robot":  {
     "aliases":["робот", "андроид", "киборг"],
-    "example":"https://audio.jukehost.co.uk/OfAhy5fRjmWvNcrDr7iTBb88nVyzRzr5"
+    "example":"https://audio.jukehost.co.uk/OfAhy5fRjmWvNcrDr7iTBb88nVyzRzr5",
+    "private": False
   }, 
   "monster":  {
     "aliases":["монстер", "монстр"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
+    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
+    "private": False
   },
   "arrowwoods":  {
     "aliases":["ара", "аравудус"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X"
+    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
+    "private": True,
+    "channels": ["arrowwoods","declider","vanilnyj_pekan"]
   }
 }
