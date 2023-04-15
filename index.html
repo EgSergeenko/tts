@@ -12,30 +12,38 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
   </head>
 
-  <body>
+  <body onclick="show_everything()">
     <div id="mini">
       <div style="white-space: nowrap;">
-        <span>Для переключения голоса нужно указать нужный голос и поставить после него двоеточие - </span>
+        <span>Для переключения голоса нужно указать желаемый голос или его альтернативу и поставить после него двоеточие - </span>
         <span style="color: #D36DA9">Голос:ᅠ ᅠ </span>
       </div>
       <div style="white-space: nowrap;">
         <span>Для воспроизведения звука нужно указать нужный звук после хэштега - </span>
         <span style="color: #8E73DC">#Звук</span>
       </div>
-    </div>
+    </div><br>  
 
     <div id="containers">
       <div id="voices"></div> <!--D36DA9-->
       <div id="sounds"></div> <!--8E73DC-->
       <div id="input">
-        <p contenteditable="true" id="input2"></p>
+        <textarea id="input2"
+          onchange="change_count()"
+          oninput="change_count()"
+          placeholder="Текст сообщения..."></textarea>
         <div id="count">
         </div>
       </div>
     </div>
 
-    <div id="show" onclick="show_everything()">
+    <div id="disclaimer" onclick="show_everything()">
       Для воспроизведения звуков на странице нужно хотя бы раз сделать клик в любом месте.
+    </div>
+
+    <div id="authors">Авторы:
+      <a href="https://www.twitch.tv/declider">declider</a>,
+      <a href="https://www.twitch.tv/vanilnyj_pekan">vanilnyj_pekan</a>
     </div>
 
     <script src="script.js"></script>
