@@ -1,28 +1,26 @@
 const params = (new URL(document.location)).searchParams
 const channel = params.get('channel') || null
 
-load_voices()
-load_sounds()
+let textarea = document.getElementById("textarea")
+let count = document.getElementById("count")
+let tiplink = document.getElementById("tip-link")
 
-
-function openInfo(el){
-    document.getElementById(el).style.visibility = "visible"
+if(channel) {
+    tiplink.href = `https://streamelements.com/${channel}/tip`
 }
 
-function closeInfo(el){
-    document.getElementById(el).style.visibility = "hidden"
+loadVoices()
+loadSounds()
+
+function goToTip(e) {
+    e.preventDefault()
+    navigator.clipboard.writeText(textarea.value.trim()).then(() => {
+        window.open(e.target.href, '_blank').focus()
+    })
 }
 
-
-function show_everything() {
+function showEverything() {
     document.getElementById("disclaimer").style.visibility = "hidden"
-}
-
-
-function showTips() {
-    let tips = document.getElementById("img2")
-    tips.style.visibility = "visible"
-    tips.style.opacity = 1
 }
 
 
@@ -92,13 +90,15 @@ function createVoice(name, dicto) {
     voice.title = "Кликни, чтобы давать этот голос в окно ввода."
 
     voice.addEventListener("click", (event) => {
-        let input = document.getElementById("input2")
         let variants = event.target.dataset.variants.split(',')
         let name = variants.reduce((a, b) => a.length <= b.length ? a : b)
-        console.log(name)
-
-        input.value += " "+name+":"
-        change_count()
+        let newValue = (textarea.value + " " + name + ": ").replaceAll("  ", " ")
+        if(newValue.length<=255) {
+            textarea.value = newValue
+        } else {
+            alert("Текст не должен содержать больше 255 символов.")
+        }
+        changeCount()
     }, false);
 
 
@@ -144,10 +144,14 @@ function createSound(name, link) {
     row.appendChild(audio)
 
     sound.addEventListener("click", (event) => {
-        let input = document.getElementById("input2")
         let name = event.target.innerText
-        input.value += " #"+name
-        change_count()
+        let newValue = (textarea.value + " #" + name).replaceAll("  ", " ")
+        if(newValue.length<=255) {
+            textarea.value = newValue
+        } else {
+            alert("Текст не должен содержать больше 255 символов.")
+        }
+        changeCount()
     }, false);
 
     sound.addEventListener("mouseover", (event) => {
@@ -163,18 +167,23 @@ function createSound(name, link) {
 }
 
 
-function change_count() {
-    let input = document.getElementById("input2")
-    let count = document.getElementById("count")
-    if(input.value.length!=0) {
-        count.innerText = input.value.length
+function changeCount() {
+    if(textarea.value.length!=0) {
+        count.innerText = textarea.value.length
+        if(channel){
+            tiplink.style.visibility = "visible"
+        }
+        
     }else{
         count.innerText = ""
+        if(channel){
+            tiplink.style.visibility = "hidden"
+        }
     }
 }
 
 
-function load_sounds() {
+function loadSounds() {
     let url = "sounds.txt"
     let storedtext, name, link;
 
@@ -193,7 +202,7 @@ function load_sounds() {
 }
 
 
-function load_voices() {
+function loadVoices() {
     let url = "voices.json"
     let name
 
