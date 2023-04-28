@@ -9,10 +9,9 @@
     <meta charset="utf-8">
     <title>Инструкция TTS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
   </head>
 
-  <body onclick="show_everything()">
+  <body onclick="showEverything()">
     <div id="mini">
       <div style="white-space: nowrap;">
         <span>Для переключения голоса нужно указать желаемый голос или его альтернативу и поставить после него двоеточие - </span>
@@ -28,16 +27,18 @@
       <div id="voices"></div> <!--D36DA9-->
       <div id="sounds"></div> <!--8E73DC-->
       <div id="input">
-        <textarea id="input2"
-          onchange="change_count()"
-          oninput="change_count()"
+        <textarea id="textarea"
+          onchange="changeCount()"
+          oninput="changeCount()"
+          maxlength="255"
           placeholder="Текст сообщения..."></textarea>
-        <div id="count">
+        <div id="count" title="Максимальная длина сообщения на StreamElements - 255 символов.">
         </div>
+        <a id="tip-link" target="_blank" onclick="goToTip(event)">Скопировать текст и перейти<br> на страницу доната</a>
       </div>
     </div>
 
-    <div id="disclaimer" onclick="show_everything()">
+    <div id="disclaimer" onclick="showEverything()">
       Для воспроизведения звуков на странице нужно хотя бы раз сделать клик в любом месте.
     </div>
 
