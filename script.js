@@ -27,7 +27,7 @@ function showEverything() {
 function createVoice(name, dicto) {
     let channels = dicto['channels'] || []
     
-    if(channel && !channels.includes(channel)) {
+    if(channel && channels.length && !channels.includes(channel)) {
         return
     }
 
