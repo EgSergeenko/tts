@@ -54,7 +54,6 @@ function createVoice(name, dicto) {
 
     let alts = document.createElement("div")
     alts.className = "alts"
-    alts.innerText = "Альтернативы: "
     alts.id = name+"alt"
     let aliases = dicto['aliases']
 
