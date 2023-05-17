@@ -68,6 +68,7 @@ mgs|https://audio.jukehost.co.uk/pkQjitELTTUIZ4jJ6Xvx0Hhf3BEZBKQD
 moan|https://audio.jukehost.co.uk/xPuG1CW04MfE4cXn3yBHmyNJ1hZLELuO
 moan2|https://audio.jukehost.co.uk/9kKcZr9Xwk9bC3nrTQBvZxvWFuba6vzo
 pencil|https://audio.jukehost.co.uk/Sy9hNfuzEJQVrGqwNJkddLOClFbV03A5
+pause|https://audio.jukehost.co.uk/gmOVHoalU2aQTf8DjA82l9S90tR2uC3q
 phone|https://audio.jukehost.co.uk/Ye7YDw7zegDZFXsbtLuuUMWCiMkp3NDD
 phone2|https://audio.jukehost.co.uk/5CcdZ13wZATw6lh6jzSnOSTrZtHohbPM
 pigeon|https://audio.jukehost.co.uk/s4lmRypWxj3I1SYeId2QxsKy0NvWgwV4
