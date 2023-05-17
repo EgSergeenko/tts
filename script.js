@@ -217,6 +217,14 @@ function loadVoices() {
         })
 }
 
+function openTips(){
+    document.getElementById("all-tips").style.visibility = "visible"
+}
+
+function closeTips(){
+    document.getElementById("all-tips").style.visibility = "hidden"
+}
+
 let tips_text = [
     "Не важно в каком регистре Вы пишете, текст написанный КАПСОМ не будет звучать иначе.<br>",
     "Клик мышкой по <span style=\"color: #D36DA9\">голосам</span> или <span style=\"color: #8E73DC\">звукам</span> добавляет их в окно ввода в нужном формате.",
