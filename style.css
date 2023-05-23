@@ -211,7 +211,12 @@ a {
     max-width: 50vw;
     max-height: 5vh;
     color: #ededed;
-    /* opacity: 0.8; */
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#tips:hover {
+    opacity: 1;
 }
 
 #all-tips {
