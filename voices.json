@@ -1,17 +1,17 @@
 {
   "GLaDOS":  {
     "aliases":["гладос"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
+    "example":"https://audio.jukehost.co.uk/sLCg0waZoWPwJNqCaLu3hEGYMuZsjH8E",
     "status":"released"
   },
   "Артас":  {
     "aliases":["Arthas"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
+    "example":"https://audio.jukehost.co.uk/vwvJawwaPg9Uw1LZb03CverxoJP4bqaK",
     "status":"released"
   },
   "Praden":  {
     "aliases":["Праден"],
-    "example":"https://audio.jukehost.co.uk/pOgi66koblWkL7868sfrqHWzHwZvrT4X",
+    "example":"",
     "status":"upcoming"
   }
 }
