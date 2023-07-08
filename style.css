@@ -94,7 +94,7 @@ body {
     font-weight: 700;
 }
 
-#tip-link {
+#tip-link, #store-link {
     visibility: hidden;
     padding: 5px;
     font-size: 1.3vw;
@@ -104,6 +104,11 @@ body {
     top: 3vh;
     position: relative;
     text-align: center;
+}
+
+#store-link {
+    top: 8vh;
+    font-size: 1vw;
 }
 
 .alts {
