@@ -1,12 +1,17 @@
 const params = (new URL(document.location)).searchParams
 const channel = params.get('channel') || null
+const store = params.get("store") || false
 
 let textarea = document.getElementById("textarea")
 let count = document.getElementById("count")
 let tiplink = document.getElementById("tip-link")
+let storelink = document.getElementById("store-link")
 
 if(channel) {
     tiplink.href = `https://streamelements.com/${channel}/tip`
+    if(store) {
+        storelink.href = `https://streamelements.com/${channel}/store`
+    }
 }
 
 loadVoices()
@@ -172,11 +177,17 @@ function changeCount() {
         if(channel){
             tiplink.style.visibility = "visible"
         }
+        if(storelink.href) {
+            storelink.style.visibility = "visible"
+        }
         
     }else{
         count.innerText = ""
         if(channel){
             tiplink.style.visibility = "hidden"
+        }
+        if(storelink.href) {
+            storelink.style.visibility = "hidden"
         }
     }
 }
