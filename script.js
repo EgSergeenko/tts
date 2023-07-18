@@ -6,6 +6,7 @@ let textarea = document.getElementById("textarea")
 let count = document.getElementById("count")
 let tiplink = document.getElementById("tip-link")
 let storelink = document.getElementById("store-link")
+let soundsDiv = document.getElementById("sounds")
 
 if(channel) {
     tiplink.href = `https://streamelements.com/${channel}/tip`
@@ -190,6 +191,19 @@ function changeCount() {
             storelink.style.visibility = "hidden"
         }
     }
+}
+
+
+function searchSound(string) {
+    Array.from(soundsDiv.children).forEach(element => {
+        if (string==="") {
+            element.style.display = "block"
+        } else if(element.innerHTML.toLowerCase().includes(string.toLowerCase())) {
+            element.style.display = "block"
+        } else {
+            element.style.display = "none"
+        }
+    })
 }
 
 
